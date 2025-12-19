@@ -45,7 +45,7 @@ Each library has:
 ```javascript
 // Install the client
 const client = new LibraryDocsClient({
-  baseUrl: 'https://github.com/YUZU-Hub/awesome-js-libs-for-llms'
+  baseUrl: 'https://yuzu-hub.github.io/awesome-js-libs-for-llms'
 });
 
 // Initialize at app startup (loads library index)
@@ -189,8 +189,8 @@ This project includes automated workflows:
 
 ## 🔗 Resources
 
-- **Live Documentation**: https://yuzu-hub.github.com/awesome-js-libs-for-llms/
-- **API Endpoint**: `https://yuzu-hub.github.com/awesome-js-libs-for-llms/index.json`
+- **Live Documentation**: https://yuzu-hub.github.io/awesome-js-libs-for-llms/
+- **API Endpoint**: `https://yuzu-hub.github.io/awesome-js-libs-for-llms/index.json`
 
 ## 📜 License
 
