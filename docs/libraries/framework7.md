@@ -74,7 +74,7 @@ npm install framework7-svelte
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>My App</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@9/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@9.0.2/framework7-bundle.min.css">
 </head>
 <body>
   <div id="app">
@@ -95,7 +95,7 @@ npm install framework7-svelte
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/framework7@9/js/framework7.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/framework7@9.0.2/framework7-bundle.min.js"></script>
   <script>
     var app = new Framework7({
       el: '#app',
@@ -332,10 +332,10 @@ if (app.theme === 'ios') {
 **Solution:** Use bundle version or import specific components
 ```html
 <!-- ✅ Use bundle for all components -->
-<script src="https://cdn.jsdelivr.net/npm/framework7@9/js/framework7.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/framework7@9.0.2/framework7-bundle.min.js"></script>
 
 <!-- ❌ Core version missing components -->
-<script src="https://cdn.jsdelivr.net/npm/framework7@9/js/framework7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/framework7@9.0.2/framework7.min.js"></script>
 ```
 
 ---
@@ -395,7 +395,7 @@ When to consider other libraries:
 ### v8.0.0 → v9.0.0
 - **Dynamic Navbar removed** - No longer need `dynamicNavbar` parameter, transitions work automatically
 - **Touch configuration changed** - Use `touchRipple` (Material) and `touchHighlight` (iOS) instead of `mdTouchRipple`/`iosTouchRipple`
-- **iOS 26 styles** - Updated to latest iOS 26 design language with refined spacing and typography
+- **iOS styles** - Updated to latest iOS design language with refined spacing and typography
 - **Material You updates** - New Vibrant and Monochrome color schemes, updated Range and Progressbar components
 
 ### v7.0.0 → v8.0.0
