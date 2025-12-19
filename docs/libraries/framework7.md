@@ -115,7 +115,7 @@ A mobile app interface with native iOS or Material Design styling (auto-detected
 
 ## 🔧 Common Patterns
 
-### Pattern 1: Multi-Page Navigation with Router
+### Pattern 1: Multi-Page Navigation with Content Property
 
 ```javascript
 var app = new Framework7({
@@ -125,30 +125,65 @@ var app = new Framework7({
   routes: [
     {
       path: '/',
-      url: './index.html',
+      name: 'home',
+      content: `
+        <div class="page" data-name="home">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Home</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <p>Welcome to the app!</p>
+              <a href="/about/" class="button button-fill">Go to About</a>
+            </div>
+          </div>
+        </div>
+      `,
     },
     {
       path: '/about/',
-      url: './about.html',
-    },
-    {
-      path: '/form/',
-      url: './form.html',
+      name: 'about',
+      content: `
+        <div class="page" data-name="about">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="left"><a href="#" class="link back"><i class="icon icon-back"></i></a></div>
+              <div class="title">About</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <p>About page content</p>
+            </div>
+          </div>
+        </div>
+      `,
     },
   ],
+  on: {
+    pageInit: function(page) {
+      // Handle page-specific initialization
+      if (page.name === 'about') {
+        console.log('About page initialized');
+      }
+    },
+  },
 });
 
-var mainView = app.views.create('.view-main');
+var mainView = app.views.create('.view-main', { url: '/' });
 ```
 
 ```html
 <!-- Navigation links -->
 <a href="/about/" class="link">About</a>
-<a href="/form/" class="button">Go to Form</a>
 <a href="#" class="link back">Go Back</a>
 ```
 
-**When to use:** Single-page apps with multiple views, history management needed
+**When to use:** Single-page apps - content property is simpler than url/async patterns
 
 ### Pattern 2: List View with Links
 
@@ -288,24 +323,35 @@ var app = new Framework7({
 
 ### Issue 1: View Not Initialized
 **Problem:** Router navigation doesn't work, links don't trigger page transitions
-**Solution:** Always create a view instance after app initialization
+**Solution:** Always create a view instance with initial URL after app initialization
 ```javascript
 // ❌ Wrong - no view created
-var app = new Framework7({ el: '#app' });
+var app = new Framework7({ el: '#app', routes: [...] });
 
-// ✅ Correct - create main view
-var app = new Framework7({ el: '#app' });
-var mainView = app.views.create('.view-main');
+// ✅ Correct - create main view with initial URL
+var app = new Framework7({ el: '#app', routes: [...] });
+var mainView = app.views.create('.view-main', { url: '/' });
 ```
 
 ### Issue 2: Page Lifecycle Events
 **Problem:** JavaScript not executing on dynamically loaded pages
-**Solution:** Use page lifecycle events, not document.ready
+**Solution:** Use page lifecycle events in app config or with app.on()
 ```javascript
-app.on('pageInit', function (page) {
-  // This runs when any page is initialized
+// Option 1: In app config (recommended)
+var app = new Framework7({
+  el: '#app',
+  on: {
+    pageInit: function(page) {
+      if (page.name === 'about') {
+        console.log('About page initialized');
+      }
+    },
+  },
+});
+
+// Option 2: After initialization
+app.on('pageInit', function(page) {
   if (page.name === 'about') {
-    // Code specific to about page
     console.log('About page initialized');
   }
 });
