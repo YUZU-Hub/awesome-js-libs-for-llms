@@ -57,7 +57,11 @@
             "maps",
             "media",
             "utilities",
+            "2d-graphics",
             "3d-graphics",
+            "game-engine",
+            "physics",
+            "audio",
             "touch-gestures",
             "notifications",
             "date-time",
@@ -68,6 +72,10 @@
             "lightbox-gallery",
             "scrolling",
             "validation",
+            "storage",
+            "backend",
+            "communication",
+            "pwa",
             "other"
           ]
         },
