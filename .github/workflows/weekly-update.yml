@@ -1,0 +1,42 @@
+# .github/workflows/weekly-update.yml
+# Checks for library updates weekly
+
+name: Weekly Version Check
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Every Monday at midnight
+  workflow_dispatch:
+
+jobs:
+  check-versions:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Check for version updates
+        run: node scripts/update-versions.js
+      
+      - name: Create PR if updates found
+        if: hashFiles('version-updates.json') != ''
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'chore: library version updates'
+          title: '🔄 Weekly Library Version Updates'
+          body: |
+            Automated version updates found for the following libraries:
+            
+            ```json
+            $(cat version-updates.json)
+            ```
+            
+            Please review and update the documentation if needed.
+          branch: version-updates
+          delete-branch: true

@@ -1,0 +1,729 @@
+{
+  "version": "1.0.0",
+  "updated": "2025-12-19T00:00:00Z",
+  "total": 30,
+  "libraries": [
+    {
+      "id": "jquery",
+      "name": "jQuery",
+      "version": "3.7.1",
+      "description": "Fast, small, feature-rich JavaScript library for DOM manipulation",
+      "category": "utilities",
+      "tags": ["dom", "ajax", "events", "legacy"],
+      "cdn": {
+        "js": "https://code.jquery.com/jquery-3.7.1.min.js"
+      },
+      "docs": {
+        "local": "libraries/jquery.md",
+        "official": "https://api.jquery.com/",
+        "npm": "jquery"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "87.6kb",
+        "gzipped": "30.1kb"
+      }
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "version": "5.3.8",
+      "description": "Mobile-first CSS framework with responsive components",
+      "category": "ui-framework",
+      "tags": ["css", "responsive", "components", "grid"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+        "css": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      },
+      "docs": {
+        "local": "libraries/bootstrap.md",
+        "official": "https://getbootstrap.com/docs/",
+        "npm": "bootstrap"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "swiper",
+      "name": "Swiper",
+      "version": "12.0.3",
+      "description": "Modern mobile touch slider with hardware acceleration",
+      "category": "slider-carousel",
+      "tags": ["slider", "carousel", "touch", "mobile", "gallery"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js",
+        "css": "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+      },
+      "docs": {
+        "local": "libraries/swiper.md",
+        "official": "https://swiperjs.com/",
+        "npm": "swiper"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "axios",
+      "name": "Axios",
+      "version": "1.13.2",
+      "description": "Promise-based HTTP client for browser and Node.js",
+      "category": "http",
+      "tags": ["ajax", "http", "promise", "api", "rest"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"
+      },
+      "docs": {
+        "local": "libraries/axios.md",
+        "official": "https://axios-http.com/",
+        "npm": "axios"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": []
+    },
+    {
+      "id": "alpine-js",
+      "name": "Alpine.js",
+      "version": "3.15.3",
+      "description": "Lightweight reactive framework for adding interactivity",
+      "category": "ui-framework",
+      "tags": ["reactive", "lightweight", "components"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/alpinejs@3.15.3/dist/cdn.min.js"
+      },
+      "docs": {
+        "local": "libraries/alpine-js.md",
+        "official": "https://alpinejs.dev/",
+        "npm": "alpinejs"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "chart-js",
+      "name": "Chart.js",
+      "version": "4.5.1",
+      "description": "Simple yet flexible JavaScript charting library",
+      "category": "charts",
+      "tags": ["charts", "graphs", "visualization", "canvas"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
+      },
+      "docs": {
+        "local": "libraries/chart-js.md",
+        "official": "https://www.chartjs.org/",
+        "npm": "chart.js"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "181kb",
+        "gzipped": "59kb"
+      }
+    },
+    {
+      "id": "lodash",
+      "name": "Lodash",
+      "version": "4.17.21",
+      "description": "Utility library for arrays, objects, and functional programming",
+      "category": "utilities",
+      "tags": ["utility", "functional", "helpers", "debounce", "throttle", "cloneDeep"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"
+      },
+      "docs": {
+        "local": "libraries/lodash.md",
+        "official": "https://lodash.com/",
+        "npm": "lodash"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "71kb",
+        "gzipped": "25kb"
+      }
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "version": "3.14.2",
+      "description": "Professional-grade JavaScript animation library",
+      "category": "animation",
+      "tags": ["animation", "timeline", "tween", "svg"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"
+      },
+      "docs": {
+        "local": "libraries/gsap.md",
+        "official": "https://gsap.com/",
+        "npm": "gsap"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "three-js",
+      "name": "Three.js",
+      "version": "0.182.0",
+      "description": "3D graphics library using WebGL",
+      "category": "3d-graphics",
+      "tags": ["3d", "webgl", "graphics", "rendering"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js"
+      },
+      "docs": {
+        "local": "libraries/three-js.md",
+        "official": "https://threejs.org/",
+        "npm": "three"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "d3-js",
+      "name": "D3.js",
+      "version": "7.9.0",
+      "description": "Data-driven document manipulation for visualizations",
+      "category": "charts",
+      "tags": ["visualization", "data", "svg", "charts", "interactive"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
+      },
+      "docs": {
+        "local": "libraries/d3-js.md",
+        "official": "https://d3js.org/",
+        "npm": "d3"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "283kb",
+        "gzipped": "73kb"
+      }
+    },
+    {
+      "id": "moment-js",
+      "name": "Moment.js",
+      "version": "2.30.1",
+      "description": "Date parsing, validation, and manipulation library",
+      "category": "date-time",
+      "tags": ["date", "time", "formatting", "timezone"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"
+      },
+      "docs": {
+        "local": "libraries/moment-js.md",
+        "official": "https://momentjs.com/",
+        "npm": "moment"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": []
+    },
+    {
+      "id": "sweetalert2",
+      "name": "SweetAlert2",
+      "version": "11.26.10",
+      "description": "Beautiful, responsive, customizable popup alerts",
+      "category": "modals-alerts",
+      "tags": ["modal", "alert", "popup", "notification"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/sweetalert2@11.26.10/dist/sweetalert2.all.min.js"
+      },
+      "docs": {
+        "local": "libraries/sweetalert2.md",
+        "official": "https://sweetalert2.github.io/",
+        "npm": "sweetalert2"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "anime-js",
+      "name": "Anime.js",
+      "version": "3.2.2",
+      "description": "Lightweight animation library for CSS, SVG, and DOM",
+      "category": "animation",
+      "tags": ["animation", "css", "svg", "lightweight"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"
+      },
+      "docs": {
+        "local": "libraries/anime-js.md",
+        "official": "https://animejs.com/",
+        "npm": "animejs"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "leaflet",
+      "name": "Leaflet",
+      "version": "1.9.4",
+      "description": "Mobile-friendly interactive maps library",
+      "category": "maps",
+      "tags": ["maps", "geolocation", "mobile", "tiles"],
+      "cdn": {
+        "js": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+        "css": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      },
+      "docs": {
+        "local": "libraries/leaflet.md",
+        "official": "https://leafletjs.com/",
+        "npm": "leaflet"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "popper-js",
+      "name": "Popper.js",
+      "version": "2.11.8",
+      "description": "Tooltip and popover positioning engine",
+      "category": "utilities",
+      "tags": ["tooltip", "popover", "positioning"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      },
+      "docs": {
+        "local": "libraries/popper-js.md",
+        "official": "https://popper.js.org/",
+        "npm": "@popperjs/core"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "hammer-js",
+      "name": "Hammer.js",
+      "version": "2.0.8",
+      "description": "Multi-touch gesture library for mobile",
+      "category": "touch-gestures",
+      "tags": ["touch", "gestures", "mobile", "swipe"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"
+      },
+      "docs": {
+        "local": "libraries/hammer-js.md",
+        "official": "https://hammerjs.github.io/",
+        "npm": "hammerjs"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "lottie-web",
+      "name": "Lottie Web",
+      "version": "5.13.0",
+      "description": "Render After Effects animations as JSON",
+      "category": "animation",
+      "tags": ["animation", "after-effects", "svg", "json"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/lottie-web@5.13.0/build/player/lottie.min.js"
+      },
+      "docs": {
+        "local": "libraries/lottie-web.md",
+        "official": "https://airbnb.io/lottie/",
+        "npm": "lottie-web"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "aos",
+      "name": "AOS",
+      "version": "2.3.4",
+      "description": "Animate On Scroll library",
+      "category": "scrolling",
+      "tags": ["scroll", "animation", "reveal"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js",
+        "css": "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      },
+      "docs": {
+        "local": "libraries/aos.md",
+        "official": "https://michalsnik.github.io/aos/",
+        "npm": "aos"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "scrollreveal",
+      "name": "ScrollReveal",
+      "version": "4.0.9",
+      "description": "Easy scroll animations for web elements",
+      "category": "scrolling",
+      "tags": ["scroll", "animation", "reveal"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"
+      },
+      "docs": {
+        "local": "libraries/scrollreveal.md",
+        "official": "https://scrollrevealjs.org/",
+        "npm": "scrollreveal"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "glide-js",
+      "name": "Glide.js",
+      "version": "3.7.1",
+      "description": "Lightweight, dependency-free slider library",
+      "category": "slider-carousel",
+      "tags": ["slider", "carousel", "lightweight"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js",
+        "css": "https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css"
+      },
+      "docs": {
+        "local": "libraries/glide-js.md",
+        "official": "https://glidejs.com/",
+        "npm": "@glidejs/glide"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": []
+    },
+    {
+      "id": "phaser",
+      "name": "Phaser",
+      "version": "3.90.0",
+      "description": "Fast 2D game framework for Canvas and WebGL",
+      "category": "game-engine",
+      "tags": ["game", "canvas", "webgl", "2d", "physics"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"
+      },
+      "docs": {
+        "local": "libraries/phaser.md",
+        "official": "https://phaser.io/",
+        "npm": "phaser"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "1.2mb",
+        "gzipped": "350kb"
+      }
+    },
+    {
+      "id": "pixi-js",
+      "name": "PixiJS",
+      "version": "8.14.3",
+      "description": "Fast 2D rendering engine with WebGL and WebGPU",
+      "category": "2d-graphics",
+      "tags": ["2d", "webgl", "canvas", "rendering", "sprites"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/pixi.js@8.14.3/dist/pixi.min.js"
+      },
+      "docs": {
+        "local": "libraries/pixi-js.md",
+        "official": "https://pixijs.com/",
+        "npm": "pixi.js"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "500kb",
+        "gzipped": "150kb"
+      }
+    },
+    {
+      "id": "babylon-js",
+      "name": "Babylon.js",
+      "version": "8.42.0",
+      "description": "Powerful 3D game engine with physics and XR support",
+      "category": "3d-graphics",
+      "tags": ["3d", "webgl", "game", "physics", "xr", "vr"],
+      "cdn": {
+        "js": "https://cdn.babylonjs.com/babylon.js"
+      },
+      "docs": {
+        "local": "libraries/babylon-js.md",
+        "official": "https://www.babylonjs.com/",
+        "npm": "@babylonjs/core"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "3.5mb",
+        "gzipped": "800kb"
+      }
+    },
+    {
+      "id": "matter-js",
+      "name": "Matter.js",
+      "version": "0.20.0",
+      "description": "2D physics engine for rigid body simulation",
+      "category": "physics",
+      "tags": ["physics", "2d", "simulation", "collision", "game"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"
+      },
+      "docs": {
+        "local": "libraries/matter-js.md",
+        "official": "https://brm.io/matter-js/",
+        "npm": "matter-js"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "89kb",
+        "gzipped": "25kb"
+      }
+    },
+    {
+      "id": "howler-js",
+      "name": "Howler.js",
+      "version": "2.2.4",
+      "description": "Audio library with Web Audio API and HTML5 Audio fallback",
+      "category": "audio",
+      "tags": ["audio", "sound", "music", "game", "web-audio"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"
+      },
+      "docs": {
+        "local": "libraries/howler-js.md",
+        "official": "https://howlerjs.com/",
+        "npm": "howler"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "32kb",
+        "gzipped": "10kb"
+      }
+    },
+    {
+      "id": "sip-js",
+      "name": "SIP.js",
+      "version": "0.16.0",
+      "description": "SIP signaling library for WebRTC voice and video calls",
+      "category": "communication",
+      "tags": ["voip", "webrtc", "sip", "video", "audio", "call"],
+      "cdn": {
+        "js": "https://sipjs.com/download/sip-0.16.0.min.js"
+      },
+      "docs": {
+        "local": "libraries/sip-js.md",
+        "official": "https://sipjs.com/",
+        "npm": "sip.js"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "150kb",
+        "gzipped": "40kb"
+      }
+    },
+    {
+      "id": "localforage",
+      "name": "LocalForage",
+      "version": "1.10.0",
+      "description": "Offline storage with IndexedDB, WebSQL, and localStorage fallbacks",
+      "category": "storage",
+      "tags": ["storage", "indexeddb", "offline", "cache", "persistence"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/localforage@1.10.0/dist/localforage.min.js"
+      },
+      "docs": {
+        "local": "libraries/localforage.md",
+        "official": "https://localforage.github.io/localForage/",
+        "npm": "localforage"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "29kb",
+        "gzipped": "9kb"
+      }
+    },
+    {
+      "id": "supabase-js",
+      "name": "Supabase JS",
+      "version": "2.88.0",
+      "description": "JavaScript client for Supabase backend-as-a-service",
+      "category": "backend",
+      "tags": ["database", "auth", "storage", "realtime", "postgres", "baas"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.88.0/dist/umd/supabase.min.js"
+      },
+      "docs": {
+        "local": "libraries/supabase-js.md",
+        "official": "https://supabase.com/docs",
+        "npm": "@supabase/supabase-js"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "180kb",
+        "gzipped": "50kb"
+      }
+    },
+    {
+      "id": "workbox",
+      "name": "Workbox",
+      "version": "7.4.0",
+      "description": "Google's libraries for Progressive Web App service workers",
+      "category": "pwa",
+      "tags": ["pwa", "service-worker", "offline", "cache", "precache"],
+      "cdn": {
+        "js": "https://storage.googleapis.com/workbox-cdn/releases/7.4.0/workbox-sw.js"
+      },
+      "docs": {
+        "local": "libraries/workbox.md",
+        "official": "https://developer.chrome.com/docs/workbox/",
+        "npm": "workbox-core"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": false,
+        "responsive": false
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "varies",
+        "gzipped": "varies"
+      }
+    },
+    {
+      "id": "framework7",
+      "name": "Framework7",
+      "version": "9.0.2",
+      "description": "Full-featured mobile UI framework for iOS and Android",
+      "category": "ui-framework",
+      "tags": ["mobile", "ios", "android", "pwa", "components", "native-feel"],
+      "cdn": {
+        "js": "https://cdn.jsdelivr.net/npm/framework7@9.0.2/framework7-bundle.min.js",
+        "css": "https://cdn.jsdelivr.net/npm/framework7@9.0.2/framework7-bundle.min.css"
+      },
+      "docs": {
+        "local": "libraries/framework7.md",
+        "official": "https://framework7.io/docs/",
+        "npm": "framework7"
+      },
+      "mobile": {
+        "friendly": true,
+        "touch": true,
+        "responsive": true
+      },
+      "dependencies": [],
+      "size": {
+        "minified": "400kb",
+        "gzipped": "100kb"
+      }
+    }
+  ]
+}

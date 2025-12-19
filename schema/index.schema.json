@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Library Index Schema",
+  "description": "Schema for the main index.json file containing all library metadata",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp"
+    },
+    "libraries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/library"
+      }
+    }
+  },
+  "required": ["version", "updated", "libraries"],
+  "definitions": {
+    "library": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier (kebab-case)",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest stable version",
+          "pattern": "^\\d+\\.\\d+\\.\\d+.*$"
+        },
+        "description": {
+          "type": "string",
+          "description": "One-line description (max 100 chars)",
+          "maxLength": 100
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "http",
+            "animation",
+            "charts",
+            "ui-framework",
+            "slider-carousel",
+            "forms",
+            "maps",
+            "media",
+            "utilities",
+            "3d-graphics",
+            "touch-gestures",
+            "notifications",
+            "date-time",
+            "drag-drop",
+            "modals-alerts",
+            "lazy-loading",
+            "syntax-highlighting",
+            "lightbox-gallery",
+            "scrolling",
+            "validation",
+            "other"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Additional searchable tags"
+        },
+        "cdn": {
+          "type": "object",
+          "properties": {
+            "js": {
+              "type": "string",
+              "format": "uri",
+              "description": "CDN URL for JavaScript file"
+            },
+            "css": {
+              "type": "string",
+              "format": "uri",
+              "description": "CDN URL for CSS file (if applicable)"
+            }
+          },
+          "required": ["js"]
+        },
+        "docs": {
+          "type": "object",
+          "properties": {
+            "local": {
+              "type": "string",
+              "description": "Path to local markdown doc",
+              "pattern": "^libraries/[a-z0-9-]+\\.md$"
+            },
+            "official": {
+              "type": "string",
+              "format": "uri",
+              "description": "Link to official documentation"
+            },
+            "npm": {
+              "type": "string",
+              "description": "npm package name"
+            }
+          },
+          "required": ["local", "official"]
+        },
+        "mobile": {
+          "type": "object",
+          "properties": {
+            "friendly": {
+              "type": "boolean",
+              "description": "Whether library is mobile-optimized"
+            },
+            "touch": {
+              "type": "boolean",
+              "description": "Has touch gesture support"
+            },
+            "responsive": {
+              "type": "boolean",
+              "description": "Responsive by default"
+            }
+          },
+          "required": ["friendly"]
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Required dependencies (e.g., ['jquery'])"
+        },
+        "size": {
+          "type": "object",
+          "properties": {
+            "minified": {
+              "type": "string",
+              "description": "Size of minified file (e.g., '15.2kb')"
+            },
+            "gzipped": {
+              "type": "string",
+              "description": "Size when gzipped (e.g., '5.8kb')"
+            }
+          }
+        },
+        "popularity": {
+          "type": "object",
+          "properties": {
+            "npm_weekly": {
+              "type": "number",
+              "description": "Weekly npm downloads"
+            },
+            "github_stars": {
+              "type": "number",
+              "description": "GitHub stars"
+            }
+          }
+        },
+        "lastChecked": {
+          "type": "string",
+          "format": "date",
+          "description": "Last time version was verified"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "version",
+        "description",
+        "category",
+        "cdn",
+        "docs",
+        "mobile"
+      ]
+    }
+  }
+}

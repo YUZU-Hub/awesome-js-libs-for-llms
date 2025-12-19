@@ -1,0 +1,67 @@
+# .github/workflows/validate.yml
+# Validates all PRs before merge
+
+name: Validate Pull Request
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install ajv ajv-formats
+      
+      - name: Validate JSON schemas
+        run: node scripts/validate-schema.js
+      
+      - name: Check CDN links
+        run: node scripts/check-cdn-links.js
+      
+      - name: Check markdown files exist
+        run: |
+          for file in docs/libraries/*.md; do
+            if [ ! -f "$file" ]; then
+              echo "Missing markdown file: $file"
+              exit 1
+            fi
+          done
+      
+      - name: Validate markdown format
+        run: |
+          # Check that each markdown file follows template
+          for file in docs/libraries/*.md; do
+            if ! grep -q "## 🎯 What It Does" "$file"; then
+              echo "Invalid format in $file - missing '🎯 What It Does' section"
+              exit 1
+            fi
+            if ! grep -q "## 📦 Installation" "$file"; then
+              echo "Invalid format in $file - missing '📦 Installation' section"
+              exit 1
+            fi
+          done
+      
+      - name: Comment on PR
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ All validations passed! Ready to merge.'
+            })

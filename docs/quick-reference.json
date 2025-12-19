@@ -1,0 +1,368 @@
+{
+  "version": "1.0.0",
+  "updated": "2024-12-19T00:00:00Z",
+  "libraries": [
+    {
+      "id": "jquery",
+      "name": "jQuery",
+      "version": "3.7.1",
+      "category": "utilities",
+      "cdn": "https://code.jquery.com/jquery-3.7.1.min.js",
+      "description": "Fast, small, feature-rich JavaScript library for DOM manipulation"
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "version": "5.3.8",
+      "category": "ui-framework",
+      "cdn": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "description": "Mobile-first CSS framework with responsive components"
+    },
+    {
+      "id": "swiper",
+      "name": "Swiper",
+      "version": "12.0.3",
+      "category": "slider-carousel",
+      "cdn": "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js",
+      "description": "Modern mobile touch slider with hardware acceleration"
+    },
+    {
+      "id": "axios",
+      "name": "Axios",
+      "version": "1.12.2",
+      "category": "http",
+      "cdn": "https://cdn.jsdelivr.net/npm/axios@1.12.2/dist/axios.min.js",
+      "description": "Promise-based HTTP client for browser and Node.js"
+    },
+    {
+      "id": "alpine-js",
+      "name": "Alpine.js",
+      "version": "3.14.1",
+      "category": "ui-framework",
+      "cdn": "https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js",
+      "description": "Lightweight reactive framework for adding interactivity"
+    },
+    {
+      "id": "chart-js",
+      "name": "Chart.js",
+      "version": "4.4.0",
+      "category": "charts",
+      "cdn": "https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js",
+      "description": "Simple yet flexible JavaScript charting library"
+    },
+    {
+      "id": "lodash",
+      "name": "Lodash",
+      "version": "4.17.21",
+      "category": "utilities",
+      "cdn": "https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js",
+      "description": "Utility library for arrays, objects, and functional programming"
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "version": "3.12.5",
+      "category": "animation",
+      "cdn": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+      "description": "Professional-grade JavaScript animation library"
+    },
+    {
+      "id": "three-js",
+      "name": "Three.js",
+      "version": "0.160.0",
+      "category": "3d-graphics",
+      "cdn": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js",
+      "description": "3D graphics library using WebGL"
+    },
+    {
+      "id": "d3-js",
+      "name": "D3.js",
+      "version": "7.9.0",
+      "category": "charts",
+      "cdn": "https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js",
+      "description": "Data-driven document manipulation for visualizations"
+    },
+    {
+      "id": "moment-js",
+      "name": "Moment.js",
+      "version": "2.30.1",
+      "category": "date-time",
+      "cdn": "https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js",
+      "description": "Date parsing, validation, and manipulation library"
+    },
+    {
+      "id": "sweetalert2",
+      "name": "SweetAlert2",
+      "version": "11.14.5",
+      "category": "modals-alerts",
+      "cdn": "https://cdn.jsdelivr.net/npm/sweetalert2@11",
+      "description": "Beautiful, responsive, customizable popup alerts"
+    },
+    {
+      "id": "anime-js",
+      "name": "Anime.js",
+      "version": "3.2.2",
+      "category": "animation",
+      "cdn": "https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js",
+      "description": "Lightweight animation library for CSS, SVG, and DOM"
+    },
+    {
+      "id": "leaflet",
+      "name": "Leaflet",
+      "version": "1.9.4",
+      "category": "maps",
+      "cdn": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+      "description": "Mobile-friendly interactive maps library"
+    },
+    {
+      "id": "popper-js",
+      "name": "Popper.js",
+      "version": "2.11.8",
+      "category": "utilities",
+      "cdn": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js",
+      "description": "Tooltip and popover positioning engine"
+    },
+    {
+      "id": "hammer-js",
+      "name": "Hammer.js",
+      "version": "2.0.8",
+      "category": "touch-gestures",
+      "cdn": "https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js",
+      "description": "Multi-touch gesture library for mobile"
+    },
+    {
+      "id": "lottie-web",
+      "name": "Lottie Web",
+      "version": "5.13.0",
+      "category": "animation",
+      "cdn": "https://cdn.jsdelivr.net/npm/lottie-web@5.13.0/build/player/lottie.min.js",
+      "description": "Render After Effects animations as JSON"
+    },
+    {
+      "id": "aos",
+      "name": "AOS",
+      "version": "3.0.0",
+      "category": "scrolling",
+      "cdn": "https://unpkg.com/aos@3.0.0/dist/aos.js",
+      "description": "Animate On Scroll library"
+    },
+    {
+      "id": "scrollreveal",
+      "name": "ScrollReveal",
+      "version": "4.0.9",
+      "category": "scrolling",
+      "cdn": "https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js",
+      "description": "Easy scroll animations for web elements"
+    },
+    {
+      "id": "slick-carousel",
+      "name": "Slick Carousel",
+      "version": "1.8.1",
+      "category": "slider-carousel",
+      "cdn": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js",
+      "description": "Responsive carousel with touch support"
+    },
+    {
+      "id": "glide-js",
+      "name": "Glide.js",
+      "version": "3.7.1",
+      "category": "slider-carousel",
+      "cdn": "https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js",
+      "description": "Lightweight, dependency-free slider library"
+    }
+  ],
+  "categories": {
+    "utilities": [
+      {
+        "id": "jquery",
+        "name": "jQuery",
+        "version": "3.7.1",
+        "category": "utilities",
+        "cdn": "https://code.jquery.com/jquery-3.7.1.min.js",
+        "description": "Fast, small, feature-rich JavaScript library for DOM manipulation"
+      },
+      {
+        "id": "lodash",
+        "name": "Lodash",
+        "version": "4.17.21",
+        "category": "utilities",
+        "cdn": "https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js",
+        "description": "Utility library for arrays, objects, and functional programming"
+      },
+      {
+        "id": "popper-js",
+        "name": "Popper.js",
+        "version": "2.11.8",
+        "category": "utilities",
+        "cdn": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js",
+        "description": "Tooltip and popover positioning engine"
+      }
+    ],
+    "ui-framework": [
+      {
+        "id": "bootstrap",
+        "name": "Bootstrap",
+        "version": "5.3.8",
+        "category": "ui-framework",
+        "cdn": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+        "description": "Mobile-first CSS framework with responsive components"
+      },
+      {
+        "id": "alpine-js",
+        "name": "Alpine.js",
+        "version": "3.14.1",
+        "category": "ui-framework",
+        "cdn": "https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js",
+        "description": "Lightweight reactive framework for adding interactivity"
+      }
+    ],
+    "slider-carousel": [
+      {
+        "id": "swiper",
+        "name": "Swiper",
+        "version": "12.0.3",
+        "category": "slider-carousel",
+        "cdn": "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js",
+        "description": "Modern mobile touch slider with hardware acceleration"
+      },
+      {
+        "id": "slick-carousel",
+        "name": "Slick Carousel",
+        "version": "1.8.1",
+        "category": "slider-carousel",
+        "cdn": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js",
+        "description": "Responsive carousel with touch support"
+      },
+      {
+        "id": "glide-js",
+        "name": "Glide.js",
+        "version": "3.7.1",
+        "category": "slider-carousel",
+        "cdn": "https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js",
+        "description": "Lightweight, dependency-free slider library"
+      }
+    ],
+    "http": [
+      {
+        "id": "axios",
+        "name": "Axios",
+        "version": "1.12.2",
+        "category": "http",
+        "cdn": "https://cdn.jsdelivr.net/npm/axios@1.12.2/dist/axios.min.js",
+        "description": "Promise-based HTTP client for browser and Node.js"
+      }
+    ],
+    "charts": [
+      {
+        "id": "chart-js",
+        "name": "Chart.js",
+        "version": "4.4.0",
+        "category": "charts",
+        "cdn": "https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js",
+        "description": "Simple yet flexible JavaScript charting library"
+      },
+      {
+        "id": "d3-js",
+        "name": "D3.js",
+        "version": "7.9.0",
+        "category": "charts",
+        "cdn": "https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js",
+        "description": "Data-driven document manipulation for visualizations"
+      }
+    ],
+    "animation": [
+      {
+        "id": "gsap",
+        "name": "GSAP",
+        "version": "3.12.5",
+        "category": "animation",
+        "cdn": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "description": "Professional-grade JavaScript animation library"
+      },
+      {
+        "id": "anime-js",
+        "name": "Anime.js",
+        "version": "3.2.2",
+        "category": "animation",
+        "cdn": "https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js",
+        "description": "Lightweight animation library for CSS, SVG, and DOM"
+      },
+      {
+        "id": "lottie-web",
+        "name": "Lottie Web",
+        "version": "5.13.0",
+        "category": "animation",
+        "cdn": "https://cdn.jsdelivr.net/npm/lottie-web@5.13.0/build/player/lottie.min.js",
+        "description": "Render After Effects animations as JSON"
+      }
+    ],
+    "3d-graphics": [
+      {
+        "id": "three-js",
+        "name": "Three.js",
+        "version": "0.160.0",
+        "category": "3d-graphics",
+        "cdn": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js",
+        "description": "3D graphics library using WebGL"
+      }
+    ],
+    "date-time": [
+      {
+        "id": "moment-js",
+        "name": "Moment.js",
+        "version": "2.30.1",
+        "category": "date-time",
+        "cdn": "https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js",
+        "description": "Date parsing, validation, and manipulation library"
+      }
+    ],
+    "modals-alerts": [
+      {
+        "id": "sweetalert2",
+        "name": "SweetAlert2",
+        "version": "11.14.5",
+        "category": "modals-alerts",
+        "cdn": "https://cdn.jsdelivr.net/npm/sweetalert2@11",
+        "description": "Beautiful, responsive, customizable popup alerts"
+      }
+    ],
+    "maps": [
+      {
+        "id": "leaflet",
+        "name": "Leaflet",
+        "version": "1.9.4",
+        "category": "maps",
+        "cdn": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+        "description": "Mobile-friendly interactive maps library"
+      }
+    ],
+    "touch-gestures": [
+      {
+        "id": "hammer-js",
+        "name": "Hammer.js",
+        "version": "2.0.8",
+        "category": "touch-gestures",
+        "cdn": "https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js",
+        "description": "Multi-touch gesture library for mobile"
+      }
+    ],
+    "scrolling": [
+      {
+        "id": "aos",
+        "name": "AOS",
+        "version": "3.0.0",
+        "category": "scrolling",
+        "cdn": "https://unpkg.com/aos@3.0.0/dist/aos.js",
+        "description": "Animate On Scroll library"
+      },
+      {
+        "id": "scrollreveal",
+        "name": "ScrollReveal",
+        "version": "4.0.9",
+        "category": "scrolling",
+        "cdn": "https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js",
+        "description": "Easy scroll animations for web elements"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+# .github/workflows/link-check.yml
+# Monthly link health check
+
+name: Monthly Link Check
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # First day of every month
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Check all CDN links
+        run: node scripts/check-cdn-links.js
+      
+      - name: Create issue if links broken
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '⚠️ Broken CDN Links Detected',
+              body: 'Some CDN links are returning errors. Please check the logs and update the affected libraries.',
+              labels: ['broken-links', 'maintenance']
+            })
