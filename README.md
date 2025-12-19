@@ -84,11 +84,10 @@ For library search, use: search_libraries(query)
 
 See [integration guide](docs/INTEGRATION.md) for complete setup.
 
-## 📖 Available Libraries (50)
+## 📖 Available Libraries (30)
 
 ### HTTP & AJAX
 - [Axios](docs/libraries/axios.md) - Promise-based HTTP client
-- [Fetch API](docs/libraries/fetch.md) - Native browser API
 
 ### Animation
 - [GSAP](docs/libraries/gsap.md) - Professional animation library
@@ -104,16 +103,32 @@ See [integration guide](docs/INTEGRATION.md) for complete setup.
 ### UI Frameworks
 - [Bootstrap](docs/libraries/bootstrap.md) - CSS framework
 - [Alpine.js](docs/libraries/alpine-js.md) - Lightweight reactive
+- [Framework7](docs/libraries/framework7.md) - Mobile UI framework
 
 ### Sliders & Carousels
 - [Swiper](docs/libraries/swiper.md) - Mobile touch slider
 - [Glide.js](docs/libraries/glide-js.md) - Lightweight slider
-- [Slick](docs/libraries/slick-carousel.md) - Responsive carousel
-- [Flickity](docs/libraries/flickity.md) - Touch-friendly gallery
 
-### Mobile & Touch
+### Graphics & Games
+- [Three.js](docs/libraries/three-js.md) - 3D graphics (WebGL)
+- [Babylon.js](docs/libraries/babylon-js.md) - 3D game engine
+- [PixiJS](docs/libraries/pixi-js.md) - 2D rendering
+- [Phaser](docs/libraries/phaser.md) - 2D game framework
+- [Matter.js](docs/libraries/matter-js.md) - 2D physics engine
+
+### Utilities & More
+- [jQuery](docs/libraries/jquery.md) - DOM manipulation
+- [Lodash](docs/libraries/lodash.md) - Utility functions
+- [Popper.js](docs/libraries/popper-js.md) - Tooltip positioning
 - [Hammer.js](docs/libraries/hammer-js.md) - Touch gestures
 - [Leaflet](docs/libraries/leaflet.md) - Mobile-friendly maps
+- [SweetAlert2](docs/libraries/sweetalert2.md) - Beautiful popups
+- [Moment.js](docs/libraries/moment-js.md) - Date handling
+- [Howler.js](docs/libraries/howler-js.md) - Audio playback
+- [LocalForage](docs/libraries/localforage.md) - Offline storage
+- [Supabase JS](docs/libraries/supabase-js.md) - Backend client
+- [SIP.js](docs/libraries/sip-js.md) - WebRTC VoIP
+- [Workbox](docs/libraries/workbox.md) - PWA service workers
 
 [See full list →](docs/LIBRARIES.md)
 
