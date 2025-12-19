@@ -2,12 +2,12 @@
 
 > Curated JavaScript library documentation optimized for LLM code generation agents
 
-[![Deploy](https://github.com/yourusername/awesome-js-libs-for-llms/actions/workflows/deploy.yml/badge.svg)](https://github.com/yourusername/awesome-js-libs-for-llms/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/YUZU-Hub/awesome-js-libs-for-llms/actions/workflows/deploy.yml/badge.svg)](https://github.com/YUZU-Hub/awesome-js-libs-for-llms/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🎯 Purpose
 
-This project provides **LLM-optimized documentation** for 50+ popular JavaScript libraries commonly used in web development. Unlike standard documentation, this is specifically designed for consumption by AI code generation agents like Claude, GPT-4, and others.
+This project provides **LLM-optimized documentation** for 30 popular JavaScript libraries commonly used in web development. Unlike standard documentation, this is specifically designed for consumption by AI code generation agents like Claude, GPT-4, and others.
 
 ### Why This Exists
 
@@ -61,7 +61,7 @@ const axiosDocs = await client.getDocs('axios');
 ### System Prompt Template
 
 ```markdown
-You are a code generator with access to 50+ JavaScript libraries.
+You are a code generator with access to 30 JavaScript libraries.
 
 ## Available Libraries
 ${client.getPromptTable({ limit: 20 })}
@@ -158,7 +158,7 @@ This project includes automated workflows:
 
 ## 📊 Project Stats
 
-- 50+ libraries documented
+- 30 libraries documented
 - 20+ categories
 - 100% CDN link validation
 - Auto-updated weekly
