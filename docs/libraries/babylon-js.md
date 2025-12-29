@@ -2,7 +2,7 @@
 
 > Powerful WebGL-based 3D engine for creating browser-based games and interactive 3D experiences
 
-**Version:** 8.42.0
+**Version:** 8.43.0
 **Category:** 3d-graphics
 **Bundle Size:** 1.57 MB (minified + gzipped)
 **Dependencies:** None (optional: physics engines like Cannon.js, Ammo.js)
@@ -369,4 +369,4 @@ When to consider other libraries:
 ---
 
 **Last Updated:** 2025-12-19
-**Verified Version:** 8.42.0
+**Verified Version:** 8.43.0

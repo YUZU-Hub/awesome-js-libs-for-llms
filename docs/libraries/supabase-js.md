@@ -2,7 +2,7 @@
 
 > Isomorphic JavaScript client for Supabase - Query Postgres databases, handle auth, realtime subscriptions, and file storage
 
-**Version:** 2.88.0
+**Version:** 2.89.0
 **Category:** Backend-as-a-Service
 **Bundle Size:** ~50kb (minified) / ~15kb (gzipped)
 **Dependencies:** None (standalone)
@@ -318,4 +318,4 @@ When to consider other libraries:
 ---
 
 **Last Updated:** 2025-12-19
-**Verified Version:** 2.88.0
+**Verified Version:** 2.89.0

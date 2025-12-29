@@ -266,12 +266,12 @@
     {
       "id": "sweetalert2",
       "name": "SweetAlert2",
-      "version": "11.26.10",
+      "version": "11.26.17",
       "description": "Beautiful, responsive, customizable popup alerts",
       "category": "modals-alerts",
       "tags": ["modal", "alert", "popup", "notification"],
       "cdn": {
-        "js": "https://cdn.jsdelivr.net/npm/sweetalert2@11.26.10/dist/sweetalert2.all.min.js"
+        "js": "https://cdn.jsdelivr.net/npm/sweetalert2@11.26.17/dist/sweetalert2.all.min.js"
       },
       "docs": {
         "local": "libraries/sweetalert2.md",
@@ -519,7 +519,7 @@
     {
       "id": "babylon-js",
       "name": "Babylon.js",
-      "version": "8.42.0",
+      "version": "8.43.0",
       "description": "Powerful 3D game engine with physics and XR support",
       "category": "3d-graphics",
       "tags": ["3d", "webgl", "game", "physics", "xr", "vr"],
@@ -649,12 +649,12 @@
     {
       "id": "supabase-js",
       "name": "Supabase JS",
-      "version": "2.88.0",
+      "version": "2.89.0",
       "description": "JavaScript client for Supabase backend-as-a-service",
       "category": "backend",
       "tags": ["database", "auth", "storage", "realtime", "postgres", "baas"],
       "cdn": {
-        "js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.88.0/dist/umd/supabase.min.js"
+        "js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.89.0/dist/umd/supabase.min.js"
       },
       "docs": {
         "local": "libraries/supabase-js.md",

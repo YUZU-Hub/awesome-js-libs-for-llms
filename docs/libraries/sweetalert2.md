@@ -2,7 +2,7 @@
 
 > Beautiful, responsive, customizable popup boxes
 
-**Version:** 11.26.10
+**Version:** 11.26.17
 **Category:** ui-components
 **Bundle Size:** 36 kb (minified) / 17 kb (gzipped)
 **Dependencies:** None
@@ -33,11 +33,11 @@ SweetAlert2 creates beautiful popup boxes to replace native `alert()`, `confirm(
 
 ```html
 <!-- All-in-one (CSS + JS) -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.17/dist/sweetalert2.all.min.js"></script>
 
 <!-- Or separate files -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.10/dist/sweetalert2.min.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.10/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.17/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.17/dist/sweetalert2.min.js"></script>
 ```
 
 ### npm
